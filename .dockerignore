@@ -1,0 +1,9 @@
+build/
+.android/
+.ios/
+.lib/
+.packages
+.pub-cache/
+.flutter-plugins
+.flutter-plugins-dependencies
+/.gitignore

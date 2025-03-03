@@ -1,0 +1,17 @@
+# Use an official Flutter image
+FROM cirrusci/flutter:latest
+
+# Set the working directory in the container
+WORKDIR /app
+
+# Copy the Flutter project into the container
+COPY . .
+
+# Get dependencies
+RUN flutter pub get
+
+# Expose ports for the app (change if necessary)
+EXPOSE 8080
+
+# Command to start the Flutter application
+CMD ["flutter", "run", "--web-port", "8080"]
